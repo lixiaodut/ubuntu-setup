@@ -1,0 +1,104 @@
+2
+source /home/lixiao/virenv/py2env/py2env/bin/activate
+3
+source /home/lixiao/virenv/py3env/py3env/bin/activate
+
+
+阿里云源地址
+pip install -i https://mirrors.aliyun.com/pypi/simple/  matplotlib
+
+
+更改ubuntu源：
+https://blog.csdn.net/hc1017/article/details/80941680
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+
+
+matplotlib  
+
+安装python
+ 新建虚拟环境
+https://blog.csdn.net/qq_41188944/article/details/79039681
+source /home/lixiao/virenv/py2env/py2env/bin/activate
+
+ pip 源的更改
+https://blog.csdn.net/heimu24/article/details/79284526
+https://blog.csdn.net/w5688414/article/details/82832292
+注意，说是要新建.pip 文件夹，注意新建的位置是当前用户的主目录，比如我的是 /home/lixiao/.pip
+
+
+安装 nvidia 显卡驱动 和 pytorch 
+https://blog.csdn.net/red_stone1/article/details/78727096
+
+安装cuda,cudnn,配置caffe
+https://www.cnblogs.com/go-better/p/7161006.html
+
+安装opencv的参考
+https://www.jb51.net/article/112558.htm
+https://www.cnblogs.com/go-better/p/7161006.html
+
+安装opencv遇到的问题
+Downloading ippicv_linux_20151201.tgz 超时
+https://blog.csdn.net/qq_42517195/article/details/80834655
+遇到的问题 编译opencv 2.4.13error:1 /usr/include/string.h:652:42: error: ‘memcpy’ was not declared in this scope
+https://blog.csdn.net/cheneykl/article/details/79215269
+原因：g++版本太新了，需要兼容一下
+遇到的问题：NppiGraphcutState’ has not been declared 因为和cuda8不兼容
+https://blog.csdn.net/xunan003/article/details/74188588
+问题太多了，这里有相应问题的解决方法
+https://blog.csdn.net/u013187057/article/details/80099065
+opencv 安装好之后进行测试
+https://www.jianshu.com/p/88ad5441c2ae
+
+
+安装caffe出现了问题：
+在make runtest 时 2738 math_functions.cu:435] Check failed: status == CURAND_STATUS_SUCCESS (201 vs. 0)  CURAND_STATUS_LAUNCH_FAILURE
+这是因为cuda 7.5不能匹配，需要安装cuda 8.0
+https://stackoverflow.com/questions/43839421/curand-status-launch-failure-caffe-installation
+采用以下方法先卸载 cuda 7.5 安装 cuda 8.0
+https://askubuntu.com/questions/530043/removing-nvidia-cuda-toolkit-and-installing-new-one
+
+caffe 测试：
+https://zhuanlan.zhihu.com/p/24683142
+
+安装pycaffe 出错
+https://github.com/facebook/prophet/issues/418
+pip install leveldb 编译错误解决
+https://www.cnblogs.com/elodio/p/4873923.html, 按照过程解决了之后还是会提醒找不到python.h,此时应该anzhaung新的包。 
+ sudo  apt-get install python3-dev
+ sudo apt-get upgrade
+参照：http://blog.51cto.com/berniem2m/1866159
+安装依赖完成，make pycaffe 完成之后，import caffe仍然存在问题。
+https://blog.csdn.net/qq_26093511/article/details/78991101
+安装 scikit-image 需要依赖于matplotlib ,会报错，说 python2不支持 matplotlib 3.0, 需要手动安装。pip install matplotlib==2.0
+
+
+
+安装pytorch
+
+安装 git 
+sudo apt install git
+
+安装配置vim
+https://github.com/ma6174/vim-deprecated
+
+使用gedit打开文件
+sudo gedit ~/.pip/pip.conf
+
+查看安装cuda的log 
+sudo gedit /tmp/cuda_install_25832.log
+
+linux 添加动态链接库
+https://stackoverflow.com/questions/43996484/ubuntu-caffe-installation-error-usr-bin-ld-cannot-find-lcudnn
+
+子进程 post-installation script 返回了错误号 1
+http://www.voidcn.com/article/p-beofbljl-yt.html
+
+
+faster rcnn 环境配置
+https://www.cnblogs.com/justinzhang/p/5386837.html
+
+ubuntu解压rar文件
+https://blog.csdn.net/mmagic1/article/details/81740825
+
+
+

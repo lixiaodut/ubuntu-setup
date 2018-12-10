@@ -1,0 +1,94 @@
+pip 安装包
+pip install -i  https://pypi.tuna.tsinghua.edu.cn/simple torchvision
+
+pip 更新包
+
+
+source 虚拟环境
+source /home/lixiao/python_env/py2/python2env/py2env/bin/activate
+
+虚拟环境的建立 https://blog.csdn.net/qq_41188944/article/details/79039681
+virtualenv -p /usr/bin/python2 py2env
+
+查看安装的位置
+type python2 python
+
+minist 数据库详解
+https://blog.csdn.net/ibelieveican2015/article/details/79010049
+
+gpu 性能查看
+https://blog.csdn.net/wangleiwavesharp/article/details/71642310
+
+
+watch -n 10 nvidia-smi 或者nvidia-smi -l 10
+
+
+pytorch学习 中 torch.squeeze() 和torch.unsqueeze()的用法
+https://blog.csdn.net/xiexu911/article/details/80820028
+
+
+浅谈将Pytorch模型从CPU转换成GPU
+https://zhuanlan.zhihu.com/p/31936740
+
+Pytorch中的variable, tensor与numpy相互转化的方法
+https://blog.csdn.net/pengge0433/article/details/79459679
+
+pytorch使用view
+https://ptorch.com/news/59.html
+
+PyTorch的学习笔记-torch package
+http://www.voidcn.com/article/p-wfvauiep-bqu.html
+
+博客:(来呀,快活呀)各种深度学习的总结
+https://xmfbit.github.io/
+
+vim 配置文件
+https://github.com/ma6174/vim-deprecated
+
+pytorch  中的variable 变量可以自动求到,其他的变量不可以.
+
+git 教程
+https://backlog.com/git-tutorial/cn/
+
+pip  安装源的更改
+https://blog.csdn.net/jinman8199/article/details/79159536
+https://blog.csdn.net/minose/article/details/78164277?locationNum=3&fps=1
+
+ubuntu 查找文件
+find / -name "*nvidia*"
+
+linux 查找文件 find 和 grep 
+https://www.cnblogs.com/huninglei/p/5824205.html
+lspci | grep -i nvidia
+grep 用法
+https://www.cnblogs.com/zhangyuhang3/p/6873900.html
+
+chmod 777  文件或目录
+示例：chmod  777 /etc/squid 运行命令后，squid文件夹（目录）的权限就被修改为777（可读可写可执行）。
+https://blog.csdn.net/pythonw/article/details/80263428
+
+
+b—>a即b 指向a
+ln -sf   a b
+
+ubuntu export 的作用 添加环境变量
+https://blog.csdn.net/haluoluo211/article/details/54313631
+ubuntu更改环境变量的几种方式
+https://blog.csdn.net/xiaozi0221/article/details/79056751
+存放环境变量的位置：
+sudo vim  /etc/profile
+sudo vim ~/.bashrc
+更改之后一定记得source
+echo $LD_LIBRARY_PATH 
+/usr/local/cuda-8.0/lib64::/usr/local/lib:/home/lixiao/opencv/build/lib
+
+
+Linux ldconfig命令   https://www.linuxidc.com/Linux/2015-06/118657.htm
+ldconfig是一个动态链接库管理命令，为了让动态链接库为系统所共享,还需运行动态链接库的管理命令--ldconfig。
+
+代码存放位置
+https://pan.baidu.com/s/1bTAYNc
+
+grub 引导出错：
+https://www.jianshu.com/p/1e8514d4b1fc
+
